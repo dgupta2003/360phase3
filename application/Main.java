@@ -113,8 +113,6 @@ public class Main extends Application {
 			
 			Patient patient = readPatientFromFile(enteredUsername + "_PatientInfo.txt");
 
-			//System.out.println(patient.toString());
-
 			if (patient != null && patient.getPassword().equals(enteredPassword)) {
 				createPatientDashboardScene(patient);
 			} else {
@@ -282,8 +280,6 @@ public class Main extends Application {
 		
 		Patient patient = readPatientFromFile(enteredUsername + "_PatientInfo.txt");
 
-		//System.out.println(patient.toString());
-
 		if (patient != null && patient.getUsername().equals(enteredUsername)) {
 			createNurseCheckInPage(patient);
 		} else {
@@ -365,8 +361,6 @@ public class Main extends Application {
 	        
 	        createNurseP1();
 	        // For now, let's just print the patient details
-	        System.out.println("Patient checked-in:");
-	        System.out.println(patient.toString());
 	    });
 
 	    // Back button
@@ -653,13 +647,6 @@ public class Main extends Application {
 		return period.getYears() < age;
 	}
 
-	private void displayPatientInfo(Patient patient) {
-		// Here you can implement the code to display patient information
-		System.out.println("Logged in as: " + patient.getUsername());
-		System.out.println(patient.toString());
-		// You can open a new scene or dialog to display patient information
-	}
-
 	private String savePatientInfo(Patient patient) {
 		//String patientId = generatePatientId();					//generating a unique patient ID
 		String fileName = patient.getUsername() + "_PatientInfo.txt";		//setting the name of the file as specified in the template
@@ -686,7 +673,6 @@ public class Main extends Application {
 			}
 			String patientInfoString = stringBuilder.toString();
 			// Convert patient information string to Patient object
-			System.out.println(patientInfoString);
 			return Patient.fromString(patientInfoString);
 		} catch (IOException e) {
 			e.printStackTrace();

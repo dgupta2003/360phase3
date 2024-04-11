@@ -1,0 +1,20 @@
+Since most of our team members most of our team members didn’t have eclipse or 
+git setup in eclipse, so Devansh did the git push with all the code.
+
+Below listed is the contribution of each member in the files:
+
+1) Devansh Gupta:
+	a) created the GUI for the Main screen & New Patient Login
+	b) created the Patient class
+	c) integrated the functionality to all the aspects of the application such as the adding a new patient, file creation fetching a 
+		patient from the file database when logging in as an existing patient or when the nurse checks in the patient
+
+2) Drishti Gopal Chandwani & Parhit Mathur:
+	a) created the GUIs for the Doctor's work flow
+	b) added the functionality to edit patient's health history & immunization record & visit dates when the doctor views the patient
+
+3) Sonakshi Prakash Vichare:
+	a) created the GUIs for Nurse's work flow
+	
+4) Christopher Echevarria:
+	a) created the GUIs for the Existing Patient's work flow
